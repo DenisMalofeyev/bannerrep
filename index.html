@@ -1,0 +1,168 @@
+<style>
+.box { 
+	width: 100%;
+	height: 100%;	
+
+position:fixed;
+overflow:hidden;
+z-index:7000;
+  }
+ li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+
+   
+.containerreppp
+{
+    position:relative;
+   
+    background-size: cover;
+ background-position: 50% 50%;
+ background-repeat: none;
+background-image:url("http://denis1986.esy.es/wp-content/uploads/2016/05/банннер.png");
+    width: 100%;
+    height:100%;
+    background-color: silver;
+   
+}
+.cb-slideshow li span {
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ color: transparent;
+ background-size: cover;
+ background-position: 50% 50%;
+ background-repeat: none;
+ opacity: 0;
+ z-index: 0;
+ animation: imageAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div {
+ z-index: 1000;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ text-align: center;
+ opacity: 0;
+ color: #fff;
+ animation: titleAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div h3 {
+ font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+ font-size: 50px;
+ padding: 0;
+ line-height: 200px;
+}
+.cb-slideshow li:nth-child(1) span {
+ background-image: url(http://denis1986.esy.es/wp-content/uploads/2016/06/stroiteli.jpg)
+}
+.cb-slideshow li:nth-child(2) span {
+ background-image: url(http://denis1986.esy.es/wp-content/uploads/2016/05/скрин.jpg);
+ animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+ background-image: url(http://denis1986.esy.es/wp-content/uploads/2016/05/дипломы.png);
+ animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+ background-image: url(http://denis1986.esy.es/wp-content/uploads/2016/05/слоним2.png);
+ animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+ background-image: url(http://denis1986.esy.es/wp-content/uploads/2016/05/4966451416765394.jpg);
+ animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+ background-image: url(http://denis1986.esy.es/wp-content/uploads/2016/05/банннер.png);
+ animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(2) div {
+ animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) div {
+ animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) div {
+ animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) div {
+ animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) div {
+ animation-delay: 30s;
+}
+@keyframes imageAnimation {
+ 0% { opacity: 0; animation-timing-function: ease-in; }
+ 8% { opacity: 1; animation-timing-function: ease-out; }
+ 17% { opacity: 1 }
+ 25% { opacity: 0 }
+ 100% { opacity: 0 }
+}
+@keyframes titleAnimation {
+ 0% { opacity: 0 }
+ 8% { opacity: 1 }
+ 17% { opacity: 1 }
+ 19% { opacity: 0 }
+ 100% { opacity: 0 }
+}
+@media screen and (max-width: 1140px) {
+ .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) {
+ .cb-slideshow li div h3 { font-size: 280px }
+}</style><script type="text/javascript">
+function setCookie (name, value, expires, path, domain, secure) {
+document.cookie = name + "=" + escape(value) +
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+((secure) ? "; secure" : "");
+}
+function getCookie(name) {
+var cookie = " " + document.cookie;
+var search = " " + name + "=";
+var setStr = null;
+var offset = 0;
+var end = 0;
+if (cookie.length > 0) {
+offset = cookie.indexOf(search);
+if (offset != -1) {
+offset += search.length;
+end = cookie.indexOf(";", offset)
+if (end == -1) {
+end = cookie.length;
+}
+setStr = unescape(cookie.substring(offset, end));
+}
+}
+return(setStr);
+}
+var cookies = getCookie('varriableid');
+var expires = new Date();
+var pribavok=(24-expires.getHours())*3600 * 1000;
+expires.setTime(expires.getTime() + pribavok);
+if (cookies != "yes")
+{
+
+document.write("<div class=\"box\">");
+document.write("<div class=\"containerreppp\">");
+document.write("<ul class=\"cb-slideshow\">");
+document.write("  <li><span>Image 01<\/span><div><h3 style=\"color:red;\"><strong> Реальная Эффективная Помощь<\/strong><\/h3><\/div><\/li>");
+document.write(" <li><span>Image 02<\/span><div><h3 style=\"color:red;\"><strong>Юридическая консультация<\/strong><\/h3><\/div><\/li>");
+document.write(" <li><span>Image 03<\/span><div><h3 style=\"color:red;\">Дружная команда <\/h3>><\/div><\/li>");
+document.write(" <li><span>Image 04<\/span><div><h3 style=\"color:yellow;\"><strong>Наша сила - в солидарности <\/h3><\/div><\/li><\/strong>");
+document.write(" <li><span>Image 05<\/span><div><h3 style=\"color:yellow;\"><strong> Победы в суде:миллиард сто тысяч рублей, возращено рабочим<\/strong><\/h3><\/div><\/li>");
+document.write(" <li><span>Image 06<\/span><h3 style=\"color:red;\">Белорусский.Независимый.Твой <\/h3><\/div><\/li>");
+document.write(" <\/ul>");
+document.write("<\/div>");
+document.write("");
+document.write("<\/div>");
+
+setCookie("varriableid","yes",expires);
+}
+	setTimeout(function(){jQuery('.box').fadeOut('fast')},37000);  //30000 = 30 секунд
+</script>
